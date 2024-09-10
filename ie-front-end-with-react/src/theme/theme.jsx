@@ -1,30 +1,30 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#30a000', // Verde institucional
+      main: "#30a000", // Verde institucional
     },
     secondary: {
-      main: '#007832', // Color secundario
+      main: "#007832", // Color secundario
     },
     error: {
-      main: '#f44336', // Color de error
+      main: "#f44336", // Color de error
     },
     background: {
-      default: '#ffffff', // Color de fondo por defecto
+      default: "#ffffff", // Color de fondo por defecto
     },
   },
   typography: {
-    fontFamily: 'Roboto, sans-serif',
+    fontFamily: "Roboto, sans-serif",
     h1: {
-      fontSize: '2.5rem',
+      fontSize: "2.5rem",
     },
     h2: {
-      fontSize: '2rem',
+      fontSize: "2rem",
     },
     body1: {
-      fontSize: '1rem',
+      fontSize: "1rem",
     },
   },
   spacing: 8, // Define la unidad de espaciado (8px es el valor predeterminado)
@@ -44,7 +44,7 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'none', // Desactiva la capitalización automática de los botones
+          textTransform: "none", // Desactiva la capitalización automática de los botones
         },
       },
     },
