@@ -74,7 +74,7 @@ const Usuarios = () => {
 
   const fetchCursos = async () => {
     try {
-      const response = await fetch("https://localhost:3000/usuarios");
+      const response = await fetch("https://localhost:3000/api/cursos");
       if (!response.ok) throw new Error("Error al obtener cursos");
       const data = await response.json();
       setCursos(data);
@@ -120,7 +120,7 @@ const Usuarios = () => {
 
     try {
       const response = await fetch(
-        "https://localhost:3000/api/usuarios/${selectedUsuario.email}",
+        `https://localhost:3000/api/usuarios/${selectedUsuario.email}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
@@ -145,7 +145,7 @@ const Usuarios = () => {
 
     try {
       const response = await fetch(
-        "https://localhost:3000/api/usuarios/${selectedUsuario.email}",
+        `https://localhost:3000/api/usuarios/${selectedUsuario.email}`,
         {
           method: "DELETE",
         }
