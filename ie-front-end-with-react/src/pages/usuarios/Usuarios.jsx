@@ -181,7 +181,6 @@ const Usuarios = () => {
 
   const handleInfoClick = async (usuario) => {
     setSelectedUsuario(usuario);
-
     try {
       const response = await fetch(
         `https://localhost:3000/api/usuarios/${usuario._id}/cursos`
@@ -199,6 +198,7 @@ const Usuarios = () => {
   };
 
   const handleAddCursosClick = async (usuario) => {
+    setSelectedUsuario(usuario)
     try {
       const response = await fetch(
         `https://localhost:3000/api/usuarios/${usuario._id}/cursos`
